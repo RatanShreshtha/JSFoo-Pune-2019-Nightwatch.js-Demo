@@ -1,18 +1,19 @@
 module.exports = {
   tags: ['data_driven'],
-  'Google JSFoo Pune 2019': function(browser) {
+  'Search JSFoo Pune 2019': function(browser) {
     browser
       .url(browser.globals.url) // Go to a url
       .waitForElementVisible('body', 2000) // wait till page loads
-      .assert.title('Google')  // Make sure Site title matches
-      .saveScreenshot('screenshots/google_home_page,png')
+      .assert.title(browser.globals.pageTitle)  // Make sure Site title matches
+      .saveScreenshot('screenshots/DuckDuckGo_home_page,png')
       .assert.visible('input[type=text]')
-      .setValue('input[type=text]', browser.globals.searchKeyword) // send values
-      .waitForElementVisible('input[name=btnI]', 1000)
-      .click('input[name=btnI]') // click on search button
+      .setValue('input#search_form_input_homepage', browser.globals.searchKeyword) // send values
+      .waitForElementVisible('input#search_button_homepage', 1000)
+      .click('input#search_button_homepage') // click on search button
       .pause(5000)
+      .click('#r1-0 > div:nth-child(1) > h2:nth-child(1) > a:nth-child(1)')
       .waitForElementVisible('body', 2000)
-      .assert.title('JSFoo Pune 2019 - JSFoo + Meta Refresh 2018')
+      .assert.title(browser.globals.jsfooPageTitle)
       .saveScreenshot('screenshots/JSFoo_Pune_2019_home_page.png')
       .end();
   }
