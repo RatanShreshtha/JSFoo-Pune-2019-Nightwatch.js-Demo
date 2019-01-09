@@ -23,19 +23,14 @@ Here is the directory tree for the project
 ├── data
 │  └── searchKeywords.js
 ├── log
-├── pages
-│  └── myBlog.js
 ├── reports
 ├── screenshots
 ├── tests
-│  ├── basicTests
-│  │  ├── 01_basicTest.js
-│  │  ├── 02_multiStepTest.js
-│  │  ├── 03_dataDrivenTest.js
-│  │  ├── 04_customAssertionTest.js
-│  │  └── 05_customCommandTest.js
-│  └── myBlog
-│     └── myBlog.js
+|   ├── 01_basicTest.js
+|   ├── 02_multiStepTest.js
+|   ├── 03_dataDrivenTest.js
+|   ├── 04_customAssertionTest.js
+|   └── 05_customCommandTest.js
 ├── LICENSE
 ├── README.md
 ├── nightwatch.js

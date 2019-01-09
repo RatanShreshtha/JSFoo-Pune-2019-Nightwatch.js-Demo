@@ -1,5 +1,5 @@
 module.exports = {
-  tags: ['google_data_driven'],
+  tags: ['data_driven'],
   'Google JSFoo Pune 2019': function(browser) {
     browser
       .url(browser.globals.url) // Go to a url

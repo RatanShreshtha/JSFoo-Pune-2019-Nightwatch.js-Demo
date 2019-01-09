@@ -19,4 +19,7 @@
     "url": "https://github.com/RatanShreshtha/JSFoo-Pune-2019-Nightwatch.js-Demo/issues"
   },
   "homepage": "https://github.com/RatanShreshtha/JSFoo-Pune-2019-Nightwatch.js-Demo#readme",
+  "dependencies": {
+    "nightwatch": "^1.0.18"
+  }
 }
